@@ -2,13 +2,15 @@
 <html ng-app="meuModulo">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Angular JS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
 <body ng-controller="indexController">
 <header>
 	<h2 ng-bind = "titulo"></h2>
-	<table>
+	<table class="striped">
 		<thead>
 			<tr>
 				<th>Nome</th>
@@ -33,7 +35,7 @@
 
 </header>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="lib/angular/angular.min.js"></script>
 <script type="text/javascript">
 	angular.module("meuModulo",[])
