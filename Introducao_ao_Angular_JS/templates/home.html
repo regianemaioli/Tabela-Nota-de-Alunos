@@ -2,24 +2,23 @@
 <header class="container">
 	<div class="row">
 		<h2 >Boletim dos Alunos</h2>
-	</div>
-	
+	</div>	
 </header>
 <main class="container">
 	<div class="row">
 		<br>
-		<input type="text" ng-model="busca.nome" placeholder="Busca">
-	</div>
+		<input type="text" ng-model="busca.email" placeholder="Busca">
 
+	</div>
 	<div class="row">
 		<table class="striped">
 			<thead>
 				<tr>
 					<th>Nome</th>
 					<th>E-mail</th>
-					<th>Nota 1</th>
-					<th>Nota 2</th>
-					<th>Nota 3</th>
+					<th>Nota1</th>
+					<th>Nota2</th>
+					<th>Nota3</th>
 					<th>Média</th>
 					<th>Ação</th>
 				</tr>
@@ -38,18 +37,16 @@
 					</td>
 				</tr>
 			</tbody>
-		</table>	
+		</table>
 	</div>
-		
-	
+
 	<div class="row">
 		<!-- Modal Trigger -->
-  <a ng-click="abreAddAluno()" class="waves-effect waves-light btn">Adicionar</a>
-</div>
+  		<a ng-click="abreAddAluno()" class="waves-effect waves-light btn">Adicionar</a>
+	</div>
 </main>
 
-
-
+  
   <!-- Modal Structure -->
   <div id="modal1" class="modal modal-fixed-footer">
     <div class="modal-content">
@@ -57,28 +54,33 @@
       <h4 ng-if="editando">Editar Aluno</h4>
       <p>Preencha os dados do Aluno</p>
       <div class="row">
-      	  <div class="input-field col m6 s12">
-          	<input type="text" ng-model="Aluno.nome" class="validate" placeholder="Nome">
-        </div>     
+      	<div class="input-field col m6 s12">
+          <input type="text" ng-model="Aluno.nome" class="validate" placeholder="Nome">
+          
+        </div>
+        
         <div class="input-field col m6 s12">
-          	<input type="text" ng-model="Aluno.email"class="validate" placeholder="E-mail">
+          <input type="text" ng-model="Aluno.email" class="validate" placeholder="E-mail">
+          
         </div>
         <div class="input-field col m4 s12">
-          	<input type="text" ng-model="Aluno.nota1"class="validate" placeholder="Nota1">
+          <input type="text" ng-model="Aluno.nota1" class="validate" placeholder="Nota1">
+          
         </div>
         <div class="input-field col m4 s12">
-          	<input type="text" ng-model="Aluno.nota2"class="validate" placeholder="Nota2">
+          <input type="text" ng-model="Aluno.nota2" class="validate" placeholder="Nota2">
+          
         </div>
         <div class="input-field col m4 s12">
-          	<input type="text" ng-model="Aluno.nota3"class="validate" placeholder="Nota3">
+          <input type="text" ng-model="Aluno.nota3" class="validate" placeholder="Nota3">
+          
         </div>
       </div>
     </div>
     <div class="modal-footer">
-    	<a ng-if="!editando" ng-click= "addAluno(Aluno)" class="modal-close waves-effect waves-light btn blue" >Adicionar</a>
-    	<a ng-if="editando" ng-click= "salvarAluno(Aluno)" class="modal-close waves-effect waves-light btn blue" >Salvar</a>
-      	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+    	<a ng-if="!editando" ng-click="addAluno(Aluno)" class="waves-effect waves-light btn blue">Adicionar</a>
+    	<a ng-if="editando" ng-click="salvarAluno(Aluno)" class="waves-effect waves-light btn blue">Salvar</a>
+      	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
 
-</div>
     </div>
- </div>
+  </div>
