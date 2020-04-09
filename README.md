@@ -1,7 +1,7 @@
 # Controle de Boletim de Alunos 💻
 
 
-Colocando em pratica curso de Angular JS, com tabela com media de notas de alunos.
+Colocando em pratica curso de Angular JS, com a criação de uma tabela com media de notas de alunos.
 
 ### Tecnologias utilizadas:
 - Javascript
